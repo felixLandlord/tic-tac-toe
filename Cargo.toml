@@ -1,0 +1,26 @@
+[workspace]
+members = ["backend", "frontend", "frontend"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["felixLandlord <felix.landlord.nunoo@gmail.com>"]
+
+[workspace.metadata]
+name = "tic-tac-toe"
+description = "A tic-tac-toe game with Dioxus frontend and Actix-web backend"
+
+[workspace.dependencies]
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
