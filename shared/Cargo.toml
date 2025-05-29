@@ -1,17 +1,10 @@
 [package]
-name = "backend"
+name = "shared"
 version = "0.1.0"
 authors = ["felixLandlord <felix.landlord.nunoo@gmail.com>"]
 edition = "2021"
 
 [dependencies]
-actix-web = "4"
-actix-web-actors = "4"
-actix = "0.13.5"
-tokio.workspace = true
 serde.workspace = true
 serde_json.workspace = true
 uuid.workspace = true
-shared = { path = "../shared" }
-env_logger = "0.11.8"
-log = "0.4.27"
